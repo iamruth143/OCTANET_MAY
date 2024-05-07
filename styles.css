@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchat MS','Lucida sans Unicode','Lucida Grande','Lucida Sans','Arial','sans-serif';
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width:100%;
+    min-height: 100vh;
+}
+.h1{
+    font-family: "Atomic Age", system-ui;
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 3vw;
+    color: white;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('https://i.pinimg.com/564x/8c/95/06/8c9506d2f227510018d5a92875ac53a8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width:100%;
+    min-height: inherit;
+    background-color:rgba(0, 0, 0, 0.281);
+}
+.text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    width:100%;
+    padding:0 10vh;
+    color:white;
+    bottom:5%;
+}
+.text h1{
+    font-family: "Allan",serif;
+    -webkit-text-stroke: 2.0px black;
+    font-weight:600;
+    font-size:6vw;
+}
+.text .image{
+    background-image: url('https://i.pinimg.com/564x/6d/27/85/6d27857a6b26037337c2537132e952fc.jpg');
+    background-size:cover;
+    background-position: center;
+    height:300px;
+    width:220px;
+
+}
+.rtext{
+    display:flex;
+    width:25%;
+    align-items:center;
+    justify-content:space-between;
+}
+.rtext p{
+    font-size:12px;
+}
+.bottom{
+    display:flex;
+    width:100%;
+    min-height: 40vh;
+}
+.b1{
+    width:30%;
+    min-height: inherit;
+    background-image: url('https://i.pinimg.com/564x/39/4e/a5/394ea5eb05fdd9b2018b0cacf79eda60.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.b1 h2{
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 3vw;
+    color : white;
+    text-align:bottom;
+    padding:20px;
+}
+.b1 p{
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+    text-align:bottom;
+    padding:100px;
+}
+.b2{
+    width:30%;
+    min-height: inherit;
+    display:flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width:100%;
+    min-height:30vh;
+    background-image: url('https://i.pinimg.com/564x/c5/b5/a0/c5b5a0094b5f3128ec5be7b90c134c0d.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    font-family: "Arbutus", serif;
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px black;
+    color : white;
+    text-align:bottom;
+    padding:20px;
+}
+.b2 .up p{
+    font-family: "Arbutus", serif;
+    font-weight: 400;
+    -webkit-text-stroke: 0.7px black;
+    color: white;
+    text-align:center;
+    padding:15px;
+}
+.b2 .down{
+    width:100%;
+    min-height:20vh;
+    background-image: url('https://i.pinimg.com/736x/40/53/97/4053972724e06696425c31dd15f9ea34.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position:relative;
+    width:100%;
+    min-height: 30vh;
+    padding : 20px;
+    background-color: rgba(255, 255, 255, 0.269);
+}
+.b2 .down h2{
+       font-family: "Aladin", system-ui;
+       font-size: 3vw;
+       -webkit-text-stroke: 0.5px black;
+       color : white;
+       text-align: bottom;
+       padding :10px;
+}
+.b3{
+    width:40%;
+    min-height: inherit;
+    background-image: url('https://i.pinimg.com/564x/9d/f5/6e/9df56e265947f70da30f5762cd388cf8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content:right;
+    position:relative;
+    margin-left:50%;
+    width:50%;
+    height:100%;
+    padding:4vw 3vh;
+}
+.b3 .overlay p{
+    font-family: "Atomic Age", system-ui;
+    font-weight: 400;
+    -webkit-text-stroke: 0.2px white;
+    color : black;
+    padding :20px;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction:column;
+        align-items:flex;
+    }
+    .text h1{
+        font-size:5vh;
+    }
+    .text image{
+        height:200px;
+        width:140px;
+        margin-top:20px;
+    }
+    .rtext{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .rtext p{
+        margin:10px;
+
+    }
+    .icons{
+        margin-top:10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .b1{
+        width:100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width:100%;
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b3{
+        width:100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
